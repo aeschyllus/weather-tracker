@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app {
+    background-image: url(../img/bg2.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+main {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.55));
+    color: #fff;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    font-size: 1em;
+    height: 3em;
+    width: 17em;
+    padding: 0 1em;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+    opacity: 0.7;
+    transition: opacity 300ms;
+}
+
+.search-bar:focus {
+    opacity: 1;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.location-box .location,
+.location-box .date,
+.temperature-box .temp,
+.temperature-box small,
+.weather-box .weather {
+    text-shadow: 3px 5px rgba(50, 50, 70, 0.5)
+}
+
+.location-box .date {
+    font-style: italic;
+}
+
+.temperature-box {
+    max-width: 400px;
+    margin: 1.2em auto;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.2)
+}
+
+.temperature-box .temp {
+    font-size: 4.5em;
+}
+
+.temperature-box small {
+    font-size: 1em;
+}
